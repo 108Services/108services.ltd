@@ -1,50 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>108 Services Ltd</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
-    .services-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-        gap: 20px;
-        padding: 20px;
-    }
-    .service-card {
-        border: 1px solid #ddd;
-        padding: 20px;
-        border-radius: 8px;
-        text-align: center;
-        background-color: #f9f9f9;
-        transition: transform 0.3s;
-    }
-    .service-card:hover { transform: scale(1.05); }
-    .service-card h3 { color: #0056b3; }
+body{font-family:Arial, sans-serif;margin:0;background:#f4f4f4;color:#333}
+header{background:#0b3d91;color:white;padding:50px 20px;text-align:center}
+header h1 {margin:0;font-size:2.5em;}
+header p {font-size:1.1em;margin:15px 0 25px 0;opacity:0.9;}
+section{padding:40px 20px;max-width:1200px;margin:0 auto}
+h2{text-align:center;color:#0b3d91;margin-bottom:30px;}
+
+/* Service Overview Grid */
+.row{display:flex;flex-wrap:wrap;gap:20px;justify-content:center}
+.card{background:white;padding:25px 20px;width:280px;border-radius:8px;box-shadow:0 4px 15px rgba(0,0,0,0.05);text-align:center;transition:transform 0.2s;}
+.card:hover {transform:translateY(-5px);}
+.card img{width:70px;margin-bottom:10px}
+.card h3 {margin:10px 0;color:#0b3d91;}
+.card p {font-size:0.95em;color:#666;line-height:1.4}
+
+/* Corporate Portfolio Showcase Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  padding: 10px;
+}
+.gallery-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+.gallery-card img{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Contact Button System */
+.btn-container {display: flex;gap: 12px;justify-content: center;flex-wrap: wrap;}
+.btn{color:white;padding:12px 24px;text-decoration:none;border-radius:5px;display:inline-block;font-weight:bold;font-size:0.95em;transition:opacity 0.2s}
+.btn:hover {opacity:0.9;}
+.btn-wa {background:#25D366}
+.btn-mail {background:#00a8ff}
+.btn-insta {background:#e1306c}
+
+/* Footer Section */
+footer{background:#111;color:white;text-align:center;padding:40px 20px;margin-top:50px;font-size:0.95em}
+footer p {margin:10px 0;opacity:0.85}
+footer a {color:#00a8ff;text-decoration:none;}
+footer a:hover {text-decoration:underline;}
+.footer-socials {margin-top:20px; display:flex; gap:15px; justify-content:center;}
 </style>
+</head>
 
-<div class="services-container">
-    <div class="service-card">
-        <h3>Construction & Materials</h3>
-        <p>Precision BOQs, technical cost estimations, and structural assessments.</p>
-    </div>
-    
-    <div class="service-card">
-        <h3>Interior Design</h3>
-        <p>Aesthetic and functional enhancements including lighting, furniture, and decor.</p>
-    </div>
+<body>
 
-    <div class="service-card">
-        <h3>Renovation</h3>
-        <p>Preventive and corrective maintenance to keep your operations running smoothly.</p>
-    </div>
-
-    <div class="service-card">
-        <h3>HR & Manpower</h3>
-        <p>Recruitment services and reliable staffing solutions for your business.</p>
-    </div>
-
-    <div class="service-card">
-        <h3>Airbnb Management</h3>
-        <p>Listing optimization, 24/7 guest communication, and property maintenance.</p>
-    </div>
-
-    <div class="service-card">
-        <h3>Corporate Consulting</h3>
-        <p>Tax compliance, business registration, and Smart HRM software solutions.</p>
-    </div>
+<header>
+<h1>108 Services Ltd</h1>
+<p>Construction & Materials • HR & Manpower Supply • Property Management & Design</p>
+<div class="btn-container">
+  <a class="btn btn-wa" href="https://wa.me/255741108108" target="_blank">WhatsApp Us</a>
+  <a class="btn btn-mail" href="mailto:108servicesteam@gmail.com">Email Us</a>
+  <a class="btn btn-insta" href="https://instagram.com/108servicestz" target="_blank">Instagram</a>
 </div>
+</header>
+
+<section>
+<h2>Our Divisions</h2>
+<div class="row">
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/estimate.png" alt="Construction Icon"/>
+<h3>Construction & Materials</h3>
+<p>Precision BOQs, technical cost estimations, structural assessments, and commercial building material provisions.</p>
+</div>
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/conference-call.png" alt="HR Icon"/>
+<h3>HR & Manpower Supply</h3>
+<p>Providing specialized field operators, skilled site technicians, and full-suite corporate HR management software architectures.</p>
+</div>
+
+<div class="card">
+<img src="https://img.icons8.com/ios-filled/100/home.png" alt="Property Icon"/>
+<h3>Property & Lifestyle</h3>
+<p>Comprehensive Airbnb co-hosting, professional interior decoration layouts, complete renovations, and specialized painting configurations.</p>
+</div>
+
+</div>
+</section>
+
+<section style="background:#fff; max-width:100%; padding:50px 20px;">
+<div style="max-width:1200px; margin:0 auto;">
+  <h2>Our Complete Corporate Solutions & Catalogues</h2>
+  
+  <div class="gallery-grid">
+    <div class="gallery-card"><img src="1000193341.jpg" alt="Smart HRM Software Features"></div>
+    <div class="gallery-card"><img src="1000193343.jpg" alt="Premium Building Supplies & Materials"></div>
+    <div class="gallery-card"><img src="1000193345.jpg" alt="Skilled Staffing & Recruitment"></div>
+    <div class="gallery-card"><img src="1000193347.jpg" alt="Property Security & Trust Terms"></div>
+    <div class="gallery-card"><img src="1000193349.jpg" alt="On-Site Labor & Operator Categories"></div>
+    <div class="gallery-card"><img src="1000193351.jpg" alt="Full-Scale Airbnb Operations Management"></div>
+    <div class="gallery-card"><img src="1000193353.jpg" alt="Corporate Registration, Tax & Compliance"></div>
+    <div class="gallery-card"><img src="1000193355.jpg" alt="Enterprise Candidate Placement Frameworks"></div>
+    <div class="gallery-card"><img src="1000193357.jpg" alt="Strategic Productivity & Placement Audits"></div>
+    <div class="gallery-card"><img src="1000193439.jpg" alt="Structural Painting Operations & Quotes"></div>
+    <div class="gallery-card"><img src="1000193381.jpg" alt="Interior Architecture & Aesthetic Decors"></div>
+    <div class="gallery-card"><img src="1000193383.jpg" alt="Structural Renovation & Corrective Support Layouts"></div>
+  </div>
+</div>
+</section>
+
+<footer>
+<p><strong>Corporate Headquarters:</strong> Nic Tower, 4th Floor, Samora Avenue, Dar es Salaam, Tanzania</p>
+<p><strong>Direct Call / WhatsApp:</strong> <a href="https://wa.me/255741108108" style="color:#25D366;">+255 741 108 108</a></p>
+<p><strong>Official Inquiries:</strong> <a href="mailto:108servicesteam@gmail.com">108servicesteam@gmail.com</a></p>
+<p><strong>Instagram Portfolio:</strong> <a href="https://instagram.com/108servicestz" target="_blank" style="color:#e1306c;">@108servicestz</a></p>
+
+<div class="footer-socials">
+  <a class="btn btn-wa" href="https://wa.me/255741108108" target="_blank" style="padding:8px 16px; font-size:0.85em;">WhatsApp</a>
+  <a class="btn btn-insta" href="https://instagram.com/108servicestz" target="_blank" style="padding:8px 16px; font-size:0.85em;">Instagram</a>
+</div>
+
+<p style="margin-top:30px; font-size:0.8em; opacity:0.4;">© 2026 108 Services Ltd. All Corporate Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
